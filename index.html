@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="section">
+            <div class="navbar">
+                <a href="#top" class="logo">Anton Liskovyi</a>
+                <ul class="navmenu">
+                    <li><a href="#heroes">Heroes</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="wrapper">
+        <div class="section home">
+            <div class="container">
+                <img src="img/logoimg.png" width="80%">
+            </div>
+        </div>
+        <div class="section heroes" id="heroes">
+            <div class="container">
+                <div class="heroes">
+
+                    <div class="slide">
+
+
+                        <div class="center slider">
+                            <div>
+                                <center><img src="img/sl1.jpg" alt=""></center>
+                            </div>
+                            <div>
+                                <center><img src="img/sl2.jpg" alt=""></center>
+                            </div>
+                            <div>
+                                <center><img src="img/sl3.jpg" alt=""></center>
+                            </div>
+                            <div>
+                                <center><img src="img/sl4.jpg" alt=""></center>
+                            </div>
+                            <div>
+                                <center><img src="img/sl5.jpg" alt=""></center>
+                            </div>
+                            <div>
+                                <center><img src="img/sl6.jpg" alt=""></center>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="textheroes">
+                    <h2>HEROES</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="section gallery" id="gallery">
+            <div class="container">
+                <div class="gallery">
+                     <div class="gallery_item">
+                        <a data-fancybox="img" src="img/1.png" data-width="1020" data-height="858">
+                            <img class="img-fluid" src="img/1.png">
+                        </a>
+                </div>
+                <div class="gallery_item">
+                    <a data-fancybox="img" src="img/2.png" data-width="1020" data-height="858">
+                        <img class="img-fluid" src="img/2.png">
+                    </a>
+                </div>
+                <div class="gallery_item">
+                    <a data-fancybox="img" src="img/3.png" data-width="1020" data-height="858">
+                        <img class="img-fluid" src="img/3.png">
+                    </a>
+                </div>
+                <div class="gallery_item">
+                    <a data-fancybox="img" src="img/4.png" data-width="1020" data-height="858">
+                        <img class="img-fluid" src="img/4.png">
+                    </a>
+                </div>
+                <div class="gallery_item">
+                    <a data-fancybox="img" src="img/5.png" data-width="1020" data-height="858">
+                        <img class="img-fluid" src="img/5.png">
+                    </a>
+                </div>
+                <div class="gallery_item">
+                    <a data-fancybox="img" src="img/6.png" data-width="1020" data-height="858">
+                        <img class="img-fluid" src="img/6.png">
+                    </a>
+                </div>
+                <div class="textgallery">
+                    <h2>GALLERY</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section about" id="about">
+        <div class="container">
+            <div class="image">
+                <img src="img/boy.JPG">
+            </div>
+            <div class="contacts">
+                <div class="facebook">
+                    <a href="mailgmail.com"><i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div class="instagram">
+                    <a href="mailgmail.com"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="email">
+                    <a href="mailgmail.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="text">
+                <h3>Антон Лісковий</h3>
+                <div class="info">
+
+                    <p> Художник сюреаліст, ілюстратор.</p>
+                    <p> Студент ЛНАМ, кафедра графічного дизайну.</p>
+                </div>
+
+            </div>
+            <div class="textabout">
+                <h2>ABOUT</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerPadding: '1px',
+
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+    </div>
+
+
+
+
+
+    <!--
+               
+               <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="img/1.png" alt="Gallery image 1" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="img/2.png" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="img/3.png" alt="Gallery image 3" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="img/4.png" alt="Gallery image 4" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="img/5.png" alt="Gallery image 5" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="img/6.png" alt="Gallery image 6" class="gallery__img">
+                </figure>
+            </div>
+              
+              
+              
+              
+              
+              
+                <img src="http://lorempixel.com/output/animals-q-c-640-480-8.jpg">
+                -->
+
+</body>
+
+</html>
