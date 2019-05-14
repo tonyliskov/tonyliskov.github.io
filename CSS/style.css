@@ -225,7 +225,7 @@ slick_slide img {
 
 .slick-prev:before,
 .slick-next:before {
-    color: black;
+    color: #604a66;
 }
 
 .slick-slide {
