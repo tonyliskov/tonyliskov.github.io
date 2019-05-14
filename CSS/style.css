@@ -361,7 +361,7 @@ slick_slide img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
     color: #604a66;
     font-size: 20px;
     line-height: 15px;
